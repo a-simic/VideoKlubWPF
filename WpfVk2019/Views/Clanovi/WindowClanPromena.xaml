@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfVk2019.Views.Clanovi.WindowClanPromena"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfVk2019.Views.Clanovi"
+        mc:Ignorable="d"
+        Title="WindowClanPromena" Height="320" Width="400" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <TextBlock Text="Ime" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock Text="Prezime" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <TextBlock Text="Licna karta" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
+        <TextBlock Text="Ulica i broj" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+        <TextBlock Text="Mesto" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxIme" HorizontalAlignment="Left" Height="23" Margin="85,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="TextBoxPrezime" HorizontalAlignment="Left" Height="23" Margin="85,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="TextBoxLicnaKarta" HorizontalAlignment="Left" Height="23" Margin="85,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="TextBoxUlicaBroj" HorizontalAlignment="Left" Height="23" Margin="85,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="TextBoxMesto" HorizontalAlignment="Left" Height="23" Margin="85,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <Button Name="ButtonPrihvati" Content="Prihvati" HorizontalAlignment="Left" Margin="86,229,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPrihvati_Click"/>
+        <Button Name="ButtonOdustani" Content="Odustani" HorizontalAlignment="Left" Margin="199,229,0,0" VerticalAlignment="Top" Width="75" Click="ButtonOdustani_Click"/>
+
+    </Grid>
+</Window>

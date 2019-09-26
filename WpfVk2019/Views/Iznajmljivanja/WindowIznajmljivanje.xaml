@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfVk2019.Views.Iznajmljivanja.WindowIznajmljivanje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfVk2019.Views.Iznajmljivanja"
+        mc:Ignorable="d"
+        Title="WindowIznajmljivanje" Height="450" Width="900" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="DataGrid1" HorizontalAlignment="Left" Margin="35,32,0,0" VerticalAlignment="Top" Height="152" Width="auto"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  IsReadOnly="True"
+                  AlternatingRowBackground="LightBlue"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  CanUserSortColumns="False" 
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="90" Binding="{Binding Path=IznajmljivanjeId}"/>
+                <DataGridTextColumn Header="Film" Width="180" Binding="{Binding Path=Naziv}"/>
+                <DataGridTextColumn Header="Ime" Width="100" Binding="{Binding Path=Ime}"/>
+                <DataGridTextColumn Header="Prezime" Width="100" Binding="{Binding Path=Prezime}"/>
+                <DataGridTextColumn Header="Datum iznajmljivanja" Width="130" Binding="{Binding Path=DatumIznajmljivanja, StringFormat=dd.MM.yyyy}"/>
+                <DataGridTextColumn Header="Datum vracanja" Width="130" Binding="{Binding Path=DatumVracanja, StringFormat=dd.MM.yyyy}"/>
+                <DataGridTextColumn Header="Cena" Width="100" Binding="{Binding Path=CenaPoDanu}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Name="ButtonUbaci" Content="Novo iznajmljivanje" HorizontalAlignment="Left" Margin="36,214,0,0" VerticalAlignment="Top" Width="123" Click="ButtonUbaci_Click"/>
+        <Button Name="ButtonPromeni" Content="Promeni iznajmljivanje" HorizontalAlignment="Left" Margin="177,216,0,0" VerticalAlignment="Top" Width="176" Click="ButtonPromeni_Click"/>
+        <Button Name="ButtonObrisi" Content="Obrisi iznajmljivanje" HorizontalAlignment="Left" Margin="393,216,0,0" VerticalAlignment="Top" Width="118" Click="ButtonObrisi_Click"/>
+    </Grid>
+</Window>
